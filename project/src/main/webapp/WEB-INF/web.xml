@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>project</display-name>
+  <welcome-file-list>
+    <welcome-file>search.jsp</welcome-file>
+    <welcome-file>AdminLogin.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ViewSearchController</display-name>
+    <servlet-name>ViewSearchController</servlet-name>
+    <servlet-class>com.project.controller.ViewSearchController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewSearchController</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginControl</display-name>
+    <servlet-name>LoginControl</servlet-name>
+    <servlet-class>com.project.controller.LoginControl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginControl</servlet-name>
+    <url-pattern>/LoginControl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Logout</display-name>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.project.controller.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/logoff</url-pattern>
+  </servlet-mapping>
+</web-app>
